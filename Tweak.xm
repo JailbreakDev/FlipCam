@@ -10,10 +10,9 @@
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
 
 	if ([gestureRecognizer isKindOfClass:[UILongPressGestureRecognizer class]]) {
-
-			[[self _flipButton] sendActionsForControlEvents:UIControlEventTouchUpInside];
-
-		return TRUE;;
+             
+                [[self _flipButton] sendActionsForControlEvents:UIControlEventTouchUpInside];
+		return TRUE;
 	}
 
 	return %orig;
