@@ -1,9 +1,6 @@
-@interface CAMFlipButton : UIButton
-@end
 @interface PLCameraView : UIView
--(CAMFlipButton *)_flipButton;
+-(UIButton *)_flipButton;
 @end
-
 %hook PLCameraView
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
 	if ([gestureRecognizer isKindOfClass:[UILongPressGestureRecognizer class]]) {
